@@ -296,6 +296,7 @@ color: #0A0826;
  }
  .login{
      text-align: center;
+     margin-top: 20px;
  }
     .players{
     display: grid;
@@ -318,6 +319,13 @@ color: #0A0826;
 }
 .schedule-info{
     flex-direction: column;
+}
+.newsletter-area{
+    display: flex;
+    flex-direction: row;
+}
+.newsletter-form{
+    
 }
 }
 /* media query section end */
