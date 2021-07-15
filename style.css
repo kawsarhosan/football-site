@@ -18,7 +18,7 @@ body{
     background-color: #c91054;
     transition: .8s ease-in-out;
 }
-
+ /* header section start */
 .header-section{
     
     background-color: #2D25A0;
@@ -186,6 +186,89 @@ color: #0A0826;
     width: 80%;
     height: auto;
 }
+/* Best players section started */
+.players-container{
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+   
+}
+.player-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+.players-title h1{
+    text-align: center;
+}
+.players-title{
+    margin-bottom: 25px;
+}
+.player{
+    position: relative;
+}
+.player img{
+    width: 300px;
+}
+.player h2{
+    text-align: center;
+}
+.far{
+    padding-right: 8px;
+}
+/* Newsletter section */
+.newsletter{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.newsletter-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #544bd0;
+    width: 80%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.newsletter-heading h2{
+    font-size: 2em;
+    color: #ffffff;
+    margin: 15px 0 5px 0;
+}
+.newsletter-heading p{
+    font-size: 16px;
+    color: #ffffff;
+}
+.newsletter-form form{
+    display: flex;
+    
+    align-items: center;
+    
+}
+.newsletter-email,.newsletter-button{
+    
+    border:none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    
+}
+.newsletter-email{
+    width: 300px;
+    height: 40px;
+    font-size: 16px;
+}
+.newsletter-button{
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+    background-color: #10437a;
+    font-size: 16px;
+    color: #fff;
+    margin-left: 10px;
+}
+
 
 
 /* footer area */
@@ -224,6 +307,11 @@ color: #0A0826;
 }
 .header-right{
     margin-top: 40px;
+}
+.player-content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
 }
 .live-now{
     flex-direction: column;
