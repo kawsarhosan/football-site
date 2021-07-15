@@ -4,14 +4,26 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+/* common style and utilities */
 body{
     font-family: 'Poppins', sans-serif;
     
 }
+.btn{
+    color: #fff;
+    background-color: #E02C6D;
+    padding: 8px 15px;
+}
+.btn:hover{
+    background-color: #c91054;
+    transition: .8s ease-in-out;
+}
+
 .header-section{
     
     background-color: #2D25A0;
-    padding-top: 50px;
+    padding-top: 42px;
+    padding-bottom: 86px;
 }
 .navbar{
     display: flex;
@@ -27,6 +39,9 @@ nav ul li{
     font-size: 16px;
     
 
+}
+nav ul li:hover{
+    background-color:#c91054 ;
 }
 nav ul li a{
     color: #fff;
@@ -47,51 +62,73 @@ nav ul li a{
 
 /* Top area section */
 
-.top-section{
-    background-color: #2D25A0;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-    /* width: 100%; */ */
-}
-.top-area{
+   
+    /* }
+    .top-area{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+        padding-top:50px;
+        padding-bottom: 50px;
+        margin-bottom: 70px;
+        
+    }
+    .area{
+    
+    }
+    .area h1{
+        font-size: 64px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .span-unit{
+        color: #E02C6D;
+    }
+    .area a, .btn{
+        color: #fff;
+        background-color: #E02C6D;
+        padding: 8px 15px;
+
+    }
+    .area img{
+        width: 388px;
+        transition: transform 1.5s;
+    }
+    .area img:hover{
+        transform: scale(1.1);
+    }  */
+/* header section start */
+
+.header-details{
     display: flex;
-    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: space-around;
-    padding-top:50px;
-    padding-bottom: 50px;
-    /* justify-content: space-between; */
-}
-.area{
-    /* width: 50%; */
-    /* margin-top: 80px;
-    margin-left: 170px;
-    margin-bottom: 50px; */
-}
-.area h1{
-    font-size: 64px;
-    font-weight: bold;
-    color: #fff;
-}
-.span-unit{
-    color: #E02C6D;
-}
-.area a, .btn{
-    color: #fff;
-    background-color: #E02C6D;
-    padding: 8px 15px;
 
 }
-.area img{
-    width: 500px;
+.header-left h1{
+    font-size: 64px;
+    color: #fff;
 }
+
+.header-right img{
+    width: 400px;
+    transition: transform 1.5s;
+}
+.header-right img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
 /* players items section */
 
 .player-card{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .players{
     display: grid;
@@ -115,43 +152,68 @@ nav ul li a{
 .player h2{
     margin: 10px 0;
 }
-/* highlight section */
-.highlight-section{
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-
-} 
+/* Watch section */
 .watch-section{
     display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 50px;
-}
-.watch-now{
-    display: flex;
-    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
     
-   
+    margin: 80px;
 }
-.watch-now-info,.watch-image{
-    padding: 10px;
+.watch-section img{
+    width: 500px;
+    padding: 5px;
 }
-.watch-info h2{
-font-size: 48px;
-color: #0A0826;
+.watch-content{
+    width: 50%;
+    padding: 20px;
 }
-.watch-info p{
+.watch-content p{
     font-size: 16px;
-    color: #6C6C6C;
+    margin-bottom: 10px;
+    padding-right: 120px;
+    text-align: justify;
 }
-.watch-info{
-    margin-bottom: 25px;
+.watch-title{
+    font-size: 46px;
+}
+/* schedule section */
+.schedule-section{
+    padding: 60px;
+    background-color: #2D25A0;
+    /* box-shadow: 1px 5px 20px rgb(35 40 65 / 13%); */
 }
 
-.match{
-    width: 100%;
+.schedule-info{
 }
+.schedule-title{
+    
+    text-align: center;
+    color: #fff;
+    padding-bottom: 30px;
+}
+.country{
+    display: flex;
+    /* box-shadow: 1px 5px 20px rgb(35 40 65 / 13%); */
+    justify-content: center;
+    align-items: center;
+    /* background-color: indianred; */
+    /* width: 70%; */
+}
+.country-card{
+    background: #fff;
+    width: 25%;
+    height: 215px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 53px;
+}
+.country img{
+    width: 200px;
+}
+
+
 /* footer area */
 .footer-area{
     display: flex;
@@ -168,4 +230,12 @@ color: #0A0826;
     margin: 5px;
     font-size: 30px;
     color: gray;
+}
+
+/* midea quary section */
+@media only screen and (max-width: 688px){
+ .players{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
 }
