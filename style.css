@@ -60,44 +60,7 @@ nav ul li a{
     font-size: 15px;
 }
 
-/* Top area section */
 
-   
-    /* }
-    .top-area{
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: space-around;
-        padding-top:50px;
-        padding-bottom: 50px;
-        margin-bottom: 70px;
-        
-    }
-    .area{
-    
-    }
-    .area h1{
-        font-size: 64px;
-        font-weight: bold;
-        color: #fff;
-    }
-    .span-unit{
-        color: #E02C6D;
-    }
-    .area a, .btn{
-        color: #fff;
-        background-color: #E02C6D;
-        padding: 8px 15px;
-
-    }
-    .area img{
-        width: 388px;
-        transition: transform 1.5s;
-    }
-    .area img:hover{
-        transform: scale(1.1);
-    }  */
 /* header section start */
 
 .header-details{
@@ -152,32 +115,42 @@ nav ul li a{
 .player h2{
     margin: 10px 0;
 }
-/* Watch section */
-.watch-section{
+/* live section */
+
+.live-match{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 90%;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.live-now{
+    display: flex;
+    width: 85%;
     
-    margin: 80px;
+   
 }
-.watch-section img{
-    width: 500px;
-    padding: 5px;
+.live-now-info,.live-image{
+    padding: 10px;
 }
-.watch-content{
-    width: 50%;
-    padding: 20px;
+.live-info h2{
+font-size: 48px;
+color: #0A0826;
 }
-.watch-content p{
+.live-info p{
     font-size: 16px;
-    margin-bottom: 10px;
-    padding-right: 120px;
-    text-align: justify;
+    color: #6C6C6C;
 }
-.watch-title{
-    font-size: 46px;
+.live-info{
+    margin-bottom: 25px;
 }
+
+.match{
+    width: 100%;
+    
+    
+}
+
 /* schedule section */
 .schedule-section{
     padding: 60px;
@@ -210,7 +183,8 @@ nav ul li a{
     border-radius: 53px;
 }
 .country img{
-    width: 200px;
+    width: 80%;
+    height: auto;
 }
 
 
@@ -232,10 +206,30 @@ nav ul li a{
     color: gray;
 }
 
-/* midea quary section */
+/* media quary section */
 @media only screen and (max-width: 688px){
- .players{
+ .navbar{
+     flex-direction: column;
+ }
+ .login{
+     text-align: center;
+ }
+    .players{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
+.header-details{
+    flex-direction: column;
+    padding: 5px;
 }
+.header-right{
+    margin-top: 40px;
+}
+.live-now{
+    flex-direction: column;
+}
+.schedule-info{
+    flex-direction: column;
+}
+}
+/* media query section end */
